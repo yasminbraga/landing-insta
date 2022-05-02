@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+:root {
+  --background-color: rgb(243, 243, 243);
+  --border: 1px solid lightgray;
+  --btn-color: #0095f6;
+  --border-color: rgb(219, 219, 219);
+  --link-color: #8e8e8e;
+}
+
+.image {
+  display: none;
+}
+
+section.card-login {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 30px;
+  gap: 30px;
+}
+
+.logo {
+  width: 175px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.btn {
+  background-color: var(--btn-color);
+  color: #fff;
+  font-weight: 500;
+  padding: 5px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.content-link {
+  display: flex;
+}
+
+.content-link a {
+  color: var(--btn-color);
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.create-link {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.get-app {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.get-app p {
+  margin-bottom: 20px;
+}
+
+.apps-link {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.apps-link img {
+  width: 136px;
+}
+
+footer {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer p,
+footer a {
+  color: var(--link-color);
+  font-size: 14px;
+}
+
+footer a {
+  font-weight: 500;
+  color: var(--btn-color);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+  main.container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 0;
+  }
+
+  .image {
+    display: block;
+    height: 580px;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .create-link {
+    margin-top: 10px;
+  }
+
+  .card {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    padding: 20px;
+  }
+}
